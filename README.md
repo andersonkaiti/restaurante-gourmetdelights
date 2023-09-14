@@ -1,4 +1,4 @@
-#Site GourmetDelights
+# Site GourmetDelights
 
 Atividade da disciplina Aplicações Digitais: Planejamento e Produção do Curso Ciência da Computação
 
