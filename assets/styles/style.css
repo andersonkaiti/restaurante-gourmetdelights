@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary-color: #a53700;
+    --white: #fff;
+    --black: #000;
+}
+
+[data-theme="dark"] {
+    --primary-color: #6f2500;
+    --white: #fff;
+    --black: #000;
+}
+
+.logo img {
+    width: 50px;
+    outline: none;
+}
+
+header {
+    justify-content: space-between;
+    padding: 1em 2em;
+    background-color: var(--primary-color);
+    transition: background-color .2s;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    box-shadow: 0 0 5px #000;
+}
+
+header,
+.logo,
+.navigation-header ul {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+header svg,
+.navigation-header ul svg {
+    display: none;
+}
+
+.logo p {
+    color: #fff;
+    font-size: 2em;
+}
+
+.navigation-header ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.navigation-header ul a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    font-size: 1.2em;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.navigation-header ul a::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 4px;
+    width: 0;
+    top: 1.2em;
+    left: 0;
+    transition: .2s;
+}
+
+.navigation-header ul a:hover::after {
+    width: 40px;
+}
+
+header button {
+    border: none;
+    outline: none;
+    background-color: var(--white);
+    border-radius: 50%;
+    padding: .5em;
+}
+
+header button svg {
+    display: inline;
+    width: 20px;
+    width: 20px;
+    color: var(--black);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #c8c8c8;
+    border: 5px solid var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    border: 2px solid var(--white);
+}
+
+@media screen and (max-width: 950px) {
+    .navigation-header ul {
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: var(--primary-color);
+        padding: 2em;
+        height: 100vh;
+        display: none;
+        align-items: flex-start;
+    }
+
+    header {
+        justify-content: space-between;
+        height: 60px;
+    }
+
+    header svg {
+        display: inline;
+        cursor: pointer;
+    }
+
+    header p,
+    header img {
+        display: none;
+    }
+
+    .navigation-header ul svg {
+        display: block;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GourmetDelights</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/style-index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <svg class="menu-btn" id="menu-btn" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/img/logo.png" alt="Logo">
+            </a>
+            <p style="margin: 0;">GourmetDelights</p>
+        </div>
+        <div class="navigation-header">
+            <ul id="navbar">
+                <svg class="menu-btn" id="close-menu-btn" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                </svg>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="about-us.html">Sobre Nós</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </div>
+        <button id="btn-dark-mode"></button>
+    </header>
+    <div id="content">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/hamburguer1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/hamburguer2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/hamburguer3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="about-us mx-auto content-animation">
+            <div class="content">
+                <div class="content-emote">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+                <div class="content-text">
+                    <h1>Quem somos</h1>
+                    <p class="rounded">
+                        Bem-vindo ao GourmetDelights, onde a culinária se torna uma obra de arte. Nossos chefs dedicados e apaixonados criam pratos que despertam os sentidos e encantam o paladar. No GourmetDelights, não servimos apenas comida; servimos experiências memoráveis. Descubra o sabor da excelência conosco.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-emote">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="content-text">
+                    <h1>Uma Jornada Gastronômica Inigualável</h1>
+                    <p class="rounded">
+                        No GourmetDelights, acreditamos que a comida é mais do que uma refeição; é uma jornada. Cada prato é uma história contada por nossos chefs, e cada refeição é uma experiência que cativa os sentidos. Explore nossa carta de sabores exclusivos, mergulhe na atmosfera aconchegante do nosso restaurante e entregue-se a uma jornada gastronômica que você não encontrará em nenhum outro lugar.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <a class="rounded" href="menu.html">Acessar o menu</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="assets/js/script-navbar.js"></script>
+    <script src="https://kit.fontawesome.com/db65c38b03.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script-index.js"></script>
+    <script src="assets/js/script-load.js"></script>
+    <script src="assets/js/script-dark-mode.js"></script>
+</body>
+</html>

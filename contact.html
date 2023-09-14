@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/style-contact.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <svg class="menu-btn" id="menu-btn" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/img/logo.png" alt="Logo">
+            </a>
+            <p style="margin: 0;">GourmetDelights</p>
+        </div>
+        <div class="navigation-header">
+            <ul id="navbar" style="margin: 0;">
+                <svg class="menu-btn" id="close-menu-btn" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                </svg>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="about-us.html">Sobre Nós</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </div>
+        <button id="btn-dark-mode"></button>
+    </header>
+    <main>
+        <div id="content" class="mx-auto content-animation">
+            <p><i class="fa-solid fa-map-location-dot"></i> Endereço: 123 Rua das Delícias, Cidade Gastronômica, GA 12345, Brasil</p>
+            <p><i class="fa-solid fa-phone"></i> +55 (12) 3456-7890</p>
+            <p><i class="fa-solid fa-envelope"></i> contato@gourmetdelights.com.br</p>
+            <p><a href="https://www.facebook.com/gourmetdelightsrestaurant"><i class="fa-brands fa-facebook"></i> Facebook</a></p>
+            <p><a href="https://www.instagram.com/gourmetdelights/"><i class="fa-brands fa-instagram"></i> Instagram</a></p>
+            <p><a href="https://twitter.com/gourmet_delights"><i class="fa-brands fa-twitter"></i> Twitter</a></p>
+            <h1>Contate-nos</h1>
+            <form action="" method="post">
+                <div class="input-container">
+                    <input type="text" id="name" class="input-answer" required><br>
+                    <label for="name" class="input-label">Digite o seu nome</label>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="email" class="input-answer" required><br>
+                    <label for="email" class="input-label">Digite o seu <em>e-mail</em></label>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="subject" class="input-answer" required><br>
+                    <label for="subject" class="input-label">Assunto</label>
+                </div>
+                <label for="message">Digite a mensagem</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </form>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="assets/js/script-navbar.js"></script>
+    <script src="https://kit.fontawesome.com/db65c38b03.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script-load.js"></script>
+    <script src="assets/js/script-dark-mode.js"></script>
+</body>
+</html>
