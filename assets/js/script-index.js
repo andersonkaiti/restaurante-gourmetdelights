@@ -1,5 +1,4 @@
 const header = document.querySelector("header");
-header.style.position = "fixed";
 
 const headerTransparency = (current) => {
     if(current) {
@@ -12,8 +11,11 @@ const headerTransparency = (current) => {
 }
 
 window.addEventListener("load", () => {
-    if(window.innerWidth > 950) {
+    if(window.innerWidth > 970) {
         headerTransparency(true);
+        header.style.position = "fixed";
+    } else {
+        header.style.position = "sticky";
     }
 });
 
@@ -21,7 +23,7 @@ window.addEventListener("scroll", () => {
     if(window.scrollY > 50) {
         headerTransparency(false);
     } else {
-        if(window.innerWidth <= 950) {
+        if(window.innerWidth <= 970) {
             headerTransparency(false);
         } else {
             headerTransparency(true);
@@ -30,9 +32,11 @@ window.addEventListener("scroll", () => {
 });
 
 window.addEventListener("resize", (event) => {
-    if(window.innerWidth > 950) {
+    if(window.innerWidth > 970) {
         headerTransparency(true);
+        header.style.position = "fixed";
     } else {
         headerTransparency(false);
+        header.style.position = "sticky";
     }
 });
