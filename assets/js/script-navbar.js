@@ -1,12 +1,12 @@
-var navigationHeader = document.getElementById("navbar");
+const navBar = document.getElementById("navbar");
 var showSidebar = false;
 
-function toggleSidebar() {
+const toggleSidebar = () => {
     showSidebar = !showSidebar;
     if(showSidebar) {
-        navigationHeader.style.display = "flex";
+        navBar.style.display = "flex";
     } else {
-        navigationHeader.style.display = "none";
+        navBar.style.display = "none";
     }
 }
 
@@ -16,10 +16,20 @@ document.querySelectorAll(".menu-btn").forEach(btn => {
     })
 });
 
-window.addEventListener("resize", function(event) {
-    if(this.window.innerWidth > 950 && showSidebar) {
-        toggleSidebar();
-        navigationHeader.style.display = "flex";
+window.addEventListener("resize", (event) => {
+    if(window.innerWidth <= 970) {
+        if(showSidebar) {
+            showSidebar = !showSidebar;
+            navBar.style.display = "none";
+        } else {
+            navBar.style.display = "none";
+        }
+    } else {
+        if(showSidebar == false) {
+            navBar.style.display = "flex";
+        } else {
+            showSidebar = !showSidebar;
+        }
     }
 });
 

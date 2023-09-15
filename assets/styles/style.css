@@ -22,6 +22,7 @@
 }
 
 header {
+    width: 100%;
     justify-content: space-between;
     padding: 1em 2em;
     background-color: var(--primary-color);
@@ -62,10 +63,6 @@ header svg,
     font-size: 1.2em;
 }
 
-.active {
-    font-weight: bold;
-}
-
 .navigation-header ul a::after {
     content: "";
     position: absolute;
@@ -81,6 +78,10 @@ header svg,
     width: 40px;
 }
 
+.active {
+    font-weight: bold;
+}
+
 header button {
     border: none;
     outline: none;
@@ -91,8 +92,8 @@ header button {
 
 header button svg {
     display: inline;
-    width: 20px;
-    width: 20px;
+    width: 24px;
+    height: 24px;
     color: var(--black);
 }
 
@@ -108,7 +109,7 @@ header button svg {
     border: 2px solid var(--white);
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 970px) {
     .navigation-header ul {
         flex-direction: column;
         position: absolute;

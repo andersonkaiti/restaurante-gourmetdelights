@@ -71,4 +71,7 @@ main {
 textarea {
     width: 100%;
     outline: none;
+    background-color: var(--white);
+    color: var(--black);
+    padding: .2em;
 }
