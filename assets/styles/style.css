@@ -16,6 +16,10 @@
     --black: #000;
 }
 
+body {
+    background-color: var(--white);
+}
+
 .logo img {
     width: 50px;
     outline: none;
