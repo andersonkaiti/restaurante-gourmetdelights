@@ -22,12 +22,13 @@
 
 #content {
     background-color: var(--white);
+    transition: .5s;
 }
 
 .content-animation {
     opacity: 0;
     margin-top: -1em;
-    transition: 1s;
+    transition: .5s;
 }
 
 .about-us {

@@ -18,6 +18,7 @@
 
 main {
     background-color: var(--white);
+    transition: .5s;
 }
 
 #content {
@@ -74,4 +75,5 @@ textarea {
     background-color: var(--white);
     color: var(--black);
     padding: .2em;
+    transition: .5s;
 }

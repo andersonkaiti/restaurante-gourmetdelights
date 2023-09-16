@@ -14,6 +14,7 @@
 
 #content {
     background-color: var(--white);
+    transition: .5s;
 }
 
 .about-us {

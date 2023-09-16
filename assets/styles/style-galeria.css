@@ -19,7 +19,7 @@
 main {
     opacity: 0;
     margin-top: -2em;
-    transition: 1s;
+    transition: .5s;
     background-color: var(--white);
 }
 

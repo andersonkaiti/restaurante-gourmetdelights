@@ -32,6 +32,7 @@ select {
 
 #content {
     background-color: var(--white);
+    transition: .5s;
 }
 
 .content-animation {
